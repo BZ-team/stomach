@@ -259,8 +259,8 @@ gastritis
             *);;
      *);;
 
-gastritis->symptoms:
-sore;;
+// gastritis->symptoms:
+// sore;;
 
 
 common_gastritis
