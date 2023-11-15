@@ -64,6 +64,30 @@ disease_of_anatomical_entity
 disease_of_anatomical_entity->nrel_basic_decomposition:
 gastrointestinal_system_disease;;
 
+anatomical_formations
+    <-sc_node_not_relation;
+    => nrel_main_idtf:
+          [анатомические образования]
+            (*<-lang_ru;;*);
+          [anatomical formations]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (анатомические образования)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://definition/anatomical_formations.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        *);;
+anatomical_formations<-organs;;	
+anatomical_formations<-organ_systems;;	
+anatomical_formations<-tissues;;	
 
 gastrointestinal_system_disease
     <-sc_node_not_relation;
