@@ -270,6 +270,14 @@ common_gastritis
         *);;
 
 
+common_gastritis=> nrel_symptom: 
+sore;;
+
+common_gastritis=>causes_of_development:
+stress;;
+
+
+
 hyperacid_gastritis
     <-sc_node_not_relation;
     => nrel_main_idtf:
@@ -291,3 +299,26 @@ hyperacid_gastritis
 						*);;
                 *);;
         *);;
+
+hyperacid_gastritis 
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Утв.(гиперацидный гастрит)] (* <- lang_ru;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example: "file://statement/hyperacid_gastritis.html"
+                (*
+                            <- lang_ru;;
+                            => nrel_format: format_html;;
+                        *);;
+            *);;
+     *);;
+
+hyperacid_gastritis=> nrel_symptom: 
+sore;;
+
+hyperacid_gastritis=>causes_of_development:
+stress;;
+
