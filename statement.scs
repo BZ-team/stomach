@@ -13,7 +13,7 @@ disease
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://statement/disease.html" (*
+                    -> rrel_example: "file://definition/disease.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -21,6 +21,23 @@ disease
         *);;
 disease->nrel_basic_decomposition:
 disease_of_anatomical_entity;;
+
+disease 
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Утв.(болезнь)] (* <- lang_ru;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example: "file://approvals/disease.html"
+                (*
+                            <- lang_ru;;
+                            => nrel_format: format_html;;
+                        *);;
+            *);;
+     *);;
+
 
 
 disease_of_anatomical_entity
@@ -38,7 +55,7 @@ disease_of_anatomical_entity
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://statement/disease_of_anatomical_entity.html" (*
+                    -> rrel_example: "file://definition/disease_of_anatomical_entity.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -63,7 +80,7 @@ gastrointestinal_system_disease
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://statement/gastrointestinal_system_disease.html" (*
+                    -> rrel_example: "file://definition/gastrointestinal_system_disease.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -88,7 +105,7 @@ stomach_disease
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://statement/stomach_disease.html" (*
+                    -> rrel_example: "file://definition/stomach_disease.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -113,7 +130,7 @@ gastritis
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://statement/gastritis.html" (*
+                    -> rrel_example: "file://definition/gastritis.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -139,7 +156,7 @@ common_gastritis
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://statement/common_gastritis.html" (*
+                    -> rrel_example: "file://definition/common_gastritis.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -162,7 +179,7 @@ hyperacid_gastritis
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://statement/hyperacid_gastritis.html" (*
+                    -> rrel_example: "file://definition/hyperacid_gastritis.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
