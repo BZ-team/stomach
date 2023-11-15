@@ -233,11 +233,11 @@ gastritis
                 *);;
         *);;
 
-gastritis<=nrel_subdividing:{
-type_A;
-type_B;
-type_C
-};;
+// gastritis<=nrel_subdividing:{
+// type_A;
+// type_B;
+// type_C
+// };;
 
 gastritis->nrel_basic_decomposition:
 common_gastritis;
