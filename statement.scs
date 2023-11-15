@@ -167,22 +167,6 @@ colon;
 sigmoid_colon; 
 rectum;;
 
-gastrointestinal_tract 
-    <- rrel_key_sc_element: ... 
-        (*
-            <- sc_definition;;
-            => nrel_main_idtf:
-                [Утв.(желудочно-кишечный тракт)] (* <- lang_ru;;*);;
-            <= nrel_sc_text_translation:...
-            (*
-                -> rrel_example: "file://statement/gastrointestinal_tract.html"
-                (*
-                            <- lang_ru;;
-                            => nrel_format: format_html;;
-                        *);;
-            *);;
-     *);;
-
 
 stomach_disease
     <-sc_node_not_relation;
@@ -233,11 +217,11 @@ gastritis
                 *);;
         *);;
 
-// gastritis<=nrel_subdividing:{
-// type_A;
-// type_B;
-// type_C
-// };;
+gastritis<=nrel_subdividing:{
+type_A;
+type_B;
+type_C
+};;
 
 gastritis->nrel_basic_decomposition:
 common_gastritis;
@@ -259,8 +243,8 @@ gastritis
             *);;
      *);;
 
-// gastritis->symptoms:
-// sore;;
+gastritis->symptoms:
+sore;;
 
 
 common_gastritis
