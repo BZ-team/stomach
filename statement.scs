@@ -63,6 +63,7 @@ disease_of_anatomical_entity
         *);;
 disease_of_anatomical_entity->nrel_basic_decomposition:
 gastrointestinal_system_disease;;
+disease_of_anatomical_entity<-anatomical_formations;;	
 
 anatomical_formations
     <-sc_node_not_relation;
@@ -89,6 +90,23 @@ anatomical_formations<-organs;;
 anatomical_formations<-organ_systems;;	
 anatomical_formations<-tissues;;	
 
+anatomical_formations 
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Утв.(анатомические образования)] (* <- lang_ru;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example: "file://statement/anatomical_formations.html"
+                (*
+                            <- lang_ru;;
+                            => nrel_format: format_html;;
+                        *);;
+            *);;
+     *);;
+
+
 gastrointestinal_system_disease
     <-sc_node_not_relation;
     => nrel_main_idtf:
@@ -112,6 +130,58 @@ gastrointestinal_system_disease
         *);;
 gastrointestinal_system_disease->nrel_basic_decomposition:
 stomach_disease;;
+gastrointestinal_system_disease<-gastrointestinal_tract;;	
+
+
+gastrointestinal_tract
+    <-sc_node_not_relation;
+    => nrel_main_idtf:
+          [желудочно-кишечный тракт]
+            (*<-lang_ru;;*);
+          [gastrointestinal tract]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (желудочно-кишечный тракт)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://definition/gastrointestinal_tract.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        *);;
+gastrointestinal_tract->nrel_basic_decomposition:
+esophagus; 
+stomach; 
+duodenum; 
+gallbladder; 
+liver; 
+pancreas;
+small_intestine; 
+caecum; 
+colon; 
+sigmoid_colon; 
+rectum;;;
+
+gastrointestinal_tract 
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Утв.(желудочно-кишечный тракт)] (* <- lang_ru;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example: "file://statement/gastrointestinal_tract.html"
+                (*
+                            <- lang_ru;;
+                            => nrel_format: format_html;;
+                        *);;
+            *);;
+     *);;
 
 
 stomach_disease
@@ -135,8 +205,14 @@ stomach_disease
 						*);;
                 *);;
         *);;
+
+gastritis->nrel_subdividing:
+
+;;
+
 stomach_disease->nrel_basic_decomposition:
 gastritis;;
+stomach_disease<-stomach;;	
 
 
 gastritis
@@ -163,6 +239,26 @@ gastritis
 gastritis->nrel_basic_decomposition:
 common_gastritis;
 hyperacid_gastritis;;
+
+gastritis 
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Утв.(гастрит)] (* <- lang_ru;;*);;
+            <= nrel_sc_text_translation:...
+            (*
+                -> rrel_example: "file://statement/gastritis.html"
+                (*
+                            <- lang_ru;;
+                            => nrel_format: format_html;;
+                        *);;
+            *);;
+     *);;
+
+gastritis->symptoms:
+
+;;
 
 
 common_gastritis
