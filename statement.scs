@@ -206,8 +206,6 @@ stomach_disease
                 *);;
         *);;
 
-gastritis->nrel_subdividing;;
-
 stomach_disease->nrel_basic_decomposition:
 gastritis;;
 stomach_disease<-stomach;;	
@@ -234,6 +232,13 @@ gastritis
 						*);;
                 *);;
         *);;
+
+gastritis<=nrel_subdividing:{
+type_A;
+type_B;
+type_C
+};;
+
 gastritis->nrel_basic_decomposition:
 common_gastritis;
 hyperacid_gastritis;;
@@ -254,7 +259,8 @@ gastritis
             *);;
      *);;
 
-gastritis->symptoms;;
+gastritis->symptoms:
+sore;;
 
 
 common_gastritis
