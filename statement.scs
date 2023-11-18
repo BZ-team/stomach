@@ -19,7 +19,7 @@ disease
 						*);;
                 *);;
         *);;
-disease->nrel_basic_decomposition:
+disease->nrel_inclusion:
 disease_of_anatomical_entity;;
 
 disease 
@@ -61,7 +61,7 @@ disease_of_anatomical_entity
 						*);;
                 *);;
         *);;
-disease_of_anatomical_entity->nrel_basic_decomposition:
+disease_of_anatomical_entity->nrel_inclusion:
 gastrointestinal_system_disease;;
 disease_of_anatomical_entity<-anatomical_formations;;	
 
@@ -86,9 +86,10 @@ anatomical_formations
 						*);;
                 *);;
         *);;
-anatomical_formations<-organ;;	
-anatomical_formations<-organ_systems;;	
-anatomical_formations<-tissue;;	
+anatomical_formations->nrel_inclusion:
+organ;
+organ_systems;
+issue;;	
 
 anatomical_formations 
     <- rrel_key_sc_element: ... 
@@ -117,7 +118,7 @@ organ
         (*
             <- sc_definition;;
             => nrel_main_idtf:
-                [Опр. (органы)] (* <- lang_ru;; *);;
+                [Опр. (орган)] (* <- lang_ru;; *);;
             
              <= nrel_sc_text_translation: ... 
                 (*
@@ -127,6 +128,18 @@ organ
 						*);;
                 *);;
         *);;
+organ->nrel_inclusion:
+esophagus; 
+stomach; 
+duodenum; 
+gallbladder; 
+liver; 
+pancreas;
+small_intestine; 
+caecum; 
+colon; 
+sigmoid_colon; 
+rectum;;
 
 organ_systems
     <-sc_node_not_relation;
@@ -149,6 +162,8 @@ organ_systems
 						*);;
                 *);;
         *);;
+organ_systems->nrel_inclusion:
+gastrointestinal_system;;
 
 tissue
     <-sc_node_not_relation;
@@ -161,7 +176,7 @@ tissue
         (*
             <- sc_definition;;
             => nrel_main_idtf:
-                [Опр. (ткани)] (* <- lang_ru;; *);;
+                [Опр. (ткань)] (* <- lang_ru;; *);;
             
              <= nrel_sc_text_translation: ... 
                 (*
@@ -258,7 +273,7 @@ stomach_disease
                 *);;
         *);;
 
-stomach_disease->nrel_basic_decomposition:
+stomach_disease->nrel_inclusion:
 gastritis;;
 stomach_disease<-stomach;;	
 
@@ -291,7 +306,7 @@ type_B;
 type_C
 };;
 
-gastritis->nrel_basic_decomposition:
+gastritis->nrel_belonging:
 common_gastritis;
 hyperacid_gastritis;;
 

@@ -121,7 +121,7 @@ duodenum
 gallbladder
     <-sc_node_not_relation;
     => nrel_main_idtf:
-          [желочный пузырь]
+          [желчный пузырь]
             (*<-lang_ru;;*);
           [gallbladder]
             (* <- lang_en;;*);
@@ -129,7 +129,7 @@ gallbladder
         (*
             <- sc_definition;;
             => nrel_main_idtf:
-                [Опр. (желочный пузырь)] (* <- lang_ru;; *);;
+                [Опр. (желчный пузырь)] (* <- lang_ru;; *);;
             
              <= nrel_sc_text_translation: ... 
                 (*
@@ -146,7 +146,7 @@ gallbladder
         (*
             <- sc_definition;;
             => nrel_main_idtf:
-                [Утв. (желочный пузырь)] (* <- lang_ru;; *);;
+                [Утв. (желчный пузырь)] (* <- lang_ru;; *);;
             
              <= nrel_sc_text_translation: ... 
                 (*
@@ -201,7 +201,7 @@ liver
 pancreas
     <-sc_node_not_relation;
     => nrel_main_idtf:
-          [поджелудочная железе]
+          [поджелудочная железа]
             (*<-lang_ru;;*);
           [pancreas]
             (* <- lang_en;;*);
