@@ -89,7 +89,7 @@ anatomical_formations
 anatomical_formations=>nrel_inclusion:
 organ;
 organ_systems;
-issue;;	
+tissue;;	
 
 anatomical_formations 
     <- rrel_key_sc_element: ... 
@@ -306,7 +306,7 @@ type_B;
 type_C
 };;
 
-gastritis<=nrel_belonging:
+gastritis=>nrel_belonging:
 common_gastritis;
 hyperacid_gastritis;;
 
