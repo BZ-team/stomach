@@ -19,7 +19,7 @@ disease
 						*);;
                 *);;
         *);;
-disease->nrel_inclusion:
+disease<=nrel_inclusion:
 disease_of_anatomical_entity;;
 
 disease 
@@ -61,7 +61,7 @@ disease_of_anatomical_entity
 						*);;
                 *);;
         *);;
-disease_of_anatomical_entity->nrel_inclusion:
+disease_of_anatomical_entity<=nrel_inclusion:
 gastrointestinal_system_disease;;
 disease_of_anatomical_entity<-anatomical_formations;;	
 
@@ -86,7 +86,7 @@ anatomical_formations
 						*);;
                 *);;
         *);;
-anatomical_formations->nrel_inclusion:
+anatomical_formations<=nrel_inclusion:
 organ;
 organ_systems;
 issue;;	
@@ -128,7 +128,7 @@ organ
 						*);;
                 *);;
         *);;
-organ->nrel_inclusion:
+organ<=nrel_inclusion:
 esophagus; 
 stomach; 
 duodenum; 
@@ -162,7 +162,7 @@ organ_systems
 						*);;
                 *);;
         *);;
-organ_systems->nrel_inclusion:
+organ_systems<=nrel_inclusion:
 gastrointestinal_system;;
 
 tissue
@@ -211,7 +211,7 @@ gastrointestinal_system_disease
 						*);;
                 *);;
         *);;
-gastrointestinal_system_disease->nrel_basic_decomposition:
+gastrointestinal_system_disease<-nrel_basic_decomposition:
 stomach_disease;;
 gastrointestinal_system_disease<-gastrointestinal_tract;;	
 
@@ -237,7 +237,7 @@ gastrointestinal_tract
 						*);;
                 *);;
         *);;
-gastrointestinal_tract->nrel_basic_decomposition:
+gastrointestinal_tract<-nrel_basic_decomposition:
 esophagus; 
 stomach; 
 duodenum; 
@@ -273,7 +273,7 @@ stomach_disease
                 *);;
         *);;
 
-stomach_disease->nrel_inclusion:
+stomach_disease<=nrel_inclusion:
 gastritis;;
 stomach_disease<-stomach;;	
 
@@ -306,7 +306,7 @@ type_B;
 type_C
 };;
 
-gastritis->nrel_belonging:
+gastritis<-nrel_belonging:
 common_gastritis;
 hyperacid_gastritis;;
 
