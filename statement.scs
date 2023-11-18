@@ -86,9 +86,9 @@ anatomical_formations
 						*);;
                 *);;
         *);;
-anatomical_formations<-organs;;	
+anatomical_formations<-organ;;	
 anatomical_formations<-organ_systems;;	
-anatomical_formations<-tissues;;	
+anatomical_formations<-tissue;;	
 
 anatomical_formations 
     <- rrel_key_sc_element: ... 
@@ -105,6 +105,74 @@ anatomical_formations
                         *);;
             *);;
      *);;
+
+organ
+    <-sc_node_not_relation;
+    => nrel_main_idtf:
+          [орган]
+            (*<-lang_ru;;*);
+          [organ]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (органы)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://definition/organ.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        *);;
+
+organ_systems
+    <-sc_node_not_relation;
+    => nrel_main_idtf:
+          [система органов]
+            (*<-lang_ru;;*);
+          [organ systems]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (система органов)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://definition/organ_systems.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        *);;
+
+tissue
+    <-sc_node_not_relation;
+    => nrel_main_idtf:
+          [ткань]
+            (*<-lang_ru;;*);
+          [tissue]
+            (* <- lang_en;;*);
+    <- rrel_key_sc_element: ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Опр. (ткани)] (* <- lang_ru;; *);;
+            
+             <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://definition/tissue.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        *);;
+
+
 
 
 gastrointestinal_system_disease
