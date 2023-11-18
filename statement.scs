@@ -418,4 +418,29 @@ causes_of_development
           [causes_of_development*]
             (* <- lang_en;;*);;
 
+nrel_symptom
+ <-sc_node_norole_relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[симптом*]
+	(* <- lang_ru;;	*);
+        [symptom*]
+        (* <- lang_en;;*);
+  <- rrel_key_sc_element: ... 
+        (*
+	        <- definition;;
+            => nrel_main_idtf:
+                [Опр. (симптом)] (* <- lang_ru;; *);; 
+            <= nrel_sc_text_translation: ... 
+                (*
+                    -> rrel_example: "file://definition/nrel_symptom.html" (*
+							<- lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+                *);;
+        *);;
             
