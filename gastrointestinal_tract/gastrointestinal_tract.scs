@@ -13,7 +13,7 @@ esophagus
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/esophagus.html" (*
+                    -> rrel_example: "file://definition/esophagus.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -30,7 +30,7 @@ esophagus
     
         <= nrel_sc_text_translation: ... 
         (*
-            -> rrel_example: "file://gastrointestinal_tract/statement/esophagus.html" (*
+            -> rrel_example: "file://statement/esophagus.html" (*
                     <- lang_ru;;
                     => nrel_format: format_html;;
                 *);;
@@ -53,7 +53,7 @@ stomach
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/stomach.html" (*
+                    -> rrel_example: "file://definition/stomach.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -70,7 +70,7 @@ stomach
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/stomach.html" (*
+                    -> rrel_example: "file://statement/stomach.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -93,7 +93,7 @@ duodenum
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/duodenum.html" (*
+                    -> rrel_example: "file://definition/duodenum.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -110,7 +110,7 @@ duodenum
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/duodenum.html" (*
+                    -> rrel_example: "file://statement/duodenum.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -133,7 +133,7 @@ gallbladder
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/gallbladder.html" (*
+                    -> rrel_example: "file://definition/gallbladder.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -150,7 +150,7 @@ gallbladder
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/gallbladder.html" (*
+                    -> rrel_example: "file://statement/gallbladder.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -173,7 +173,7 @@ liver
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/liver.html" (*
+                    -> rrel_example: "file://definition/liver.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -190,7 +190,7 @@ liver
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/liver.html" (*
+                    -> rrel_example: "file://statement/liver.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -213,7 +213,7 @@ pancreas
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/pancreas.html" (*
+                    -> rrel_example: "file://definition/pancreas.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -230,7 +230,7 @@ pancreas
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/pancreas.html" (*
+                    -> rrel_example: "file://statement/pancreas.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -253,7 +253,7 @@ small_intestine
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/small_intestine.html" (*
+                    -> rrel_example: "file://definition/small_intestine.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -270,7 +270,7 @@ small_intestine
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/small_intestine.html" (*
+                    -> rrel_example: "file://statement/small_intestine.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -293,7 +293,7 @@ caecum
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/caecum.html" (*
+                    -> rrel_example: "file://definition/caecum.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -310,7 +310,7 @@ caecum
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/caecum.html" (*
+                    -> rrel_example: "file://statement/caecum.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -333,7 +333,7 @@ colon
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/colon.html" (*
+                    -> rrel_example: "file://definition/colon.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -350,7 +350,7 @@ colon
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/colon.html" (*
+                    -> rrel_example: "file://statement/colon.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -373,7 +373,7 @@ sigmoid_colon
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/sigmoid_colon.html" (*
+                    -> rrel_example: "file://definition/sigmoid_colon.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -390,7 +390,7 @@ sigmoid_colon
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/sigmoid_colon.html" (*
+                    -> rrel_example: "file://statement/sigmoid_colon.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -414,7 +414,7 @@ rectum
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/definition/rectum.html" (*
+                    -> rrel_example: "file://definition/rectum.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
@@ -431,7 +431,7 @@ rectum
             
              <= nrel_sc_text_translation: ... 
                 (*
-                    -> rrel_example: "file://gastrointestinal_tract/statement/rectum.html" (*
+                    -> rrel_example: "file://statement/rectum.html" (*
 							<- lang_ru;;
 							=> nrel_format: format_html;;
 						*);;
